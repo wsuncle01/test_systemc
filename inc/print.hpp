@@ -9,6 +9,18 @@
         std::cout<<std::endl;\
     } while(0);
 
+#define PRINT_CONCAT(X...) \
+    do{\
+        sc_print::show(X);\
+    } while(0);
+
+
+#define SC_PRINT(X...) \
+    do{\
+        PRINT_CONCAT("<",this->name(),":",__FUNCTION__,"@",sc_time_stamp(),">: ");\
+        PRINT(X);\
+    } while(0);
+
 namespace sc_print{
     template <typename T>
     void show(T first_data){

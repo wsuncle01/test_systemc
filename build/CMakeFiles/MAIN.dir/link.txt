@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/MAIN.dir/src/sc_main.cpp.o CMakeFiles/MAIN.dir/src/test_mutex.cpp.o  -o MAIN   -L/opt/systemc-2.3.3/lib-linux64  -Wl,-rpath,/opt/systemc-2.3.3/lib-linux64 -lsystemc -lstdc++ -lm 
