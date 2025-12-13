@@ -1,0 +1,22 @@
+/usr/bin/cmake -S/data/test_systemc -B/data/test_systemc/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /data/test_systemc/build/CMakeFiles /data/test_systemc/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/data/test_systemc/build'
+make -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/depend
+make[2]: Entering directory '/data/test_systemc/build'
+cd /data/test_systemc/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /data/test_systemc /data/test_systemc /data/test_systemc/build /data/test_systemc/build /data/test_systemc/build/CMakeFiles/MAIN.dir/DependInfo.cmake --color=
+Scanning dependencies of target MAIN
+make[2]: Leaving directory '/data/test_systemc/build'
+make -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/build
+make[2]: Entering directory '/data/test_systemc/build'
+[ 66%] Building CXX object CMakeFiles/MAIN.dir/src/sc_main.cpp.o
+[ 66%] Building CXX object CMakeFiles/MAIN.dir/src/test_mutex.cpp.o
+/usr/bin/c++   -I/data/test_systemc//inc -I/opt/systemc-2.3.3/include  -g   -Wno-narrowing -Wno-format -Wno-sign-compare -o CMakeFiles/MAIN.dir/src/sc_main.cpp.o -c /data/test_systemc/src/sc_main.cpp
+/usr/bin/c++   -I/data/test_systemc//inc -I/opt/systemc-2.3.3/include  -g   -Wno-narrowing -Wno-format -Wno-sign-compare -o CMakeFiles/MAIN.dir/src/test_mutex.cpp.o -c /data/test_systemc/src/test_mutex.cpp
+[100%] Linking CXX executable MAIN
+/usr/bin/cmake -E cmake_link_script CMakeFiles/MAIN.dir/link.txt --verbose=1
+/usr/bin/c++  -g   CMakeFiles/MAIN.dir/src/sc_main.cpp.o CMakeFiles/MAIN.dir/src/test_mutex.cpp.o  -o MAIN   -L/opt/systemc-2.3.3/lib-linux64  -Wl,-rpath,/opt/systemc-2.3.3/lib-linux64 -lsystemc -lstdc++ -lm 
+make[2]: Leaving directory '/data/test_systemc/build'
+[100%] Built target MAIN
+make[1]: Leaving directory '/data/test_systemc/build'
+/usr/bin/cmake -E cmake_progress_start /data/test_systemc/build/CMakeFiles 0
